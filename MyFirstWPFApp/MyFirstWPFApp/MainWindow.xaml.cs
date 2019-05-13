@@ -26,31 +26,23 @@ namespace MyFirstWPFApp
         }
 
         private void OnButtonClick(object sender, RoutedEventArgs e)
-
+        { 
             Grid.SetRow(button1, 2);
         }
 
-        //public int MyProperty { get; set; }
-
-        //private int myVar;
-
-        //public int MyProperty
-        //{
-        //    get { return myVar; }
-        //    set { myVar = value; }
-        //}
 
 
-        public int MyProperty
+
+
+        private void OnInnerButtonClick(object sender, RoutedEventArgs e)
         {
-            get { return (int)GetValue(MyPropertyProperty); }
-            set { SetValue(MyPropertyProperty, value); }
+            e.Handled = true;  // do not bubble
+            MessageBox.Show("inner button click");
         }
 
-        // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty MyPropertyProperty =
-            DependencyProperty.Register("MyProperty", typeof(int), typeof(ownerclass), new PropertyMetadata(0));
-
-
+        private void OnButtonClickInGrid(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("button click in grid");
+        }
     }
 }

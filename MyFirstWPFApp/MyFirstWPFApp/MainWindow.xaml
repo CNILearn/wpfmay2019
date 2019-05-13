@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MyFirstWPFApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid ButtonBase.Click="OnButtonClickInGrid">
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
@@ -28,7 +28,7 @@
                 <ListBoxItem>One</ListBoxItem>
                 <ListBoxItem>Two</ListBoxItem>
                 <ListBoxItem>
-                    <Button>Three</Button>
+                    <Button Click="OnInnerButtonClick">Three</Button>
                 </ListBoxItem>
             </ListBox>
         </Button>
