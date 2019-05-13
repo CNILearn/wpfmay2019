@@ -1,0 +1,30 @@
+﻿<Window x:Class="ControlsSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlsSample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--<Frame Source="https://www.cninnovation.com"></Frame>-->
+
+        <Viewbox Stretch="Uniform">
+            <Expander>
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Header" />
+                        <Button>Button in header</Button>
+                    </StackPanel>
+                </Expander.Header>
+                <Border>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Body" />
+                        <Button>Button in body</Button>
+                    </StackPanel>
+                </Border>
+            </Expander>
+        </Viewbox>
+      
+    </Grid>
+</Window>
