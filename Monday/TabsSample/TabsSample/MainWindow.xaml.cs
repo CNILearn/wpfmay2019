@@ -12,9 +12,10 @@ namespace TabsSample
 
         private void OnTabSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (tabs.IsLoaded)
+            if (tabControl.IsLoaded)
             {
-                MessageBox.Show("test");
+                
+                MessageBox.Show($"selected: {tabControl.SelectedIndex}");
             }
         }
     }

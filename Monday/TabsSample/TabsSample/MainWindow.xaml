@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TabsSample"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <TabControl SelectionChanged="OnTabSelectionChanged" x:Name="tabs">
+    <TabControl SelectionChanged="OnTabSelectionChanged" x:Name="tabControl">
         <TabItem Header="One">One</TabItem>
         <TabItem Header="Two">Two</TabItem>
     </TabControl>
