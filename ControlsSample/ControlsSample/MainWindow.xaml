@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ControlsSample"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -21,6 +22,7 @@
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="Body" />
                         <Button>Button in body</Button>
+                        <Label Content="{x:Static sys:DateTime.Now}" />
                     </StackPanel>
                 </Border>
             </Expander>
