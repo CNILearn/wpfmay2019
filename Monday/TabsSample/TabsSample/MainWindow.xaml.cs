@@ -10,14 +10,9 @@ namespace TabsSample
             InitializeComponent();
         }
 
-        private bool _isInitialized = false;
         private void OnTabSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (!_isInitialized)
-            {
-                _isInitialized = true;
-            }
-            else
+            if (tabs.IsLoaded)
             {
                 MessageBox.Show("test");
             }
