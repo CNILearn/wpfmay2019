@@ -12,6 +12,5 @@
             <TextBox Text="{Binding Data2, Mode=TwoWay}" />
             <ListBox ItemsSource="{Binding Data1Values, Mode=OneWay}" />
         </StackPanel>
-
     </Grid>
 </Window>
