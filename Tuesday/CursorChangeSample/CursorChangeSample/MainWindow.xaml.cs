@@ -34,11 +34,14 @@ namespace CursorChangeSample
         private void OnMouseEnter(object sender, MouseEventArgs e)
         { 
             Type cursorsType = typeof(Cursors);
-            var cursor = cursorsType.InvokeMember(SelectedCursorName, BindingFlags.GetProperty, null, null, null);
-            _prevCursor = this.Cursor;
-            if (cursor is Cursor newCursor)
+            if (!string.IsNullOrEmpty(SelectedCursorName))
             {
-                this.Cursor = newCursor;
+                var cursor = cursorsType.InvokeMember(SelectedCursorName, BindingFlags.GetProperty, null, null, null);
+                _prevCursor = this.Cursor;
+                if (cursor is Cursor newCursor)
+                {
+                    this.Cursor = newCursor;
+                }
             }
         }
 
