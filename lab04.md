@@ -1,4 +1,4 @@
-# Lab 5 - Data Binding
+# Lab 4 - Data Binding
 
 ## Element to Element Binding
 
