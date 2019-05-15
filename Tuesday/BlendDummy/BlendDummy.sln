@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio Version 16
+VisualStudioVersion = 16.0.28902.138
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendDummy", "BlendDummy\BlendDummy.csproj", "{ABC50470-E387-4700-ABFD-83394A6004D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABC50470-E387-4700-ABFD-83394A6004D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC50470-E387-4700-ABFD-83394A6004D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC50470-E387-4700-ABFD-83394A6004D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC50470-E387-4700-ABFD-83394A6004D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70156C6E-9694-4B5D-A2B5-C7ECAAEC35B4}
+	EndGlobalSection
+EndGlobal

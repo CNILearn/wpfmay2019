@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio Version 16
+VisualStudioVersion = 16.0.28902.138
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonStyleWithBlend", "ButtonStyleWithBlend\ButtonStyleWithBlend.csproj", "{E7CA1BA6-0484-43FB-920A-ADC95CB27E92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7CA1BA6-0484-43FB-920A-ADC95CB27E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CA1BA6-0484-43FB-920A-ADC95CB27E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CA1BA6-0484-43FB-920A-ADC95CB27E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CA1BA6-0484-43FB-920A-ADC95CB27E92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87FBF01F-EFFD-4722-BDDD-09C99A3711C8}
+	EndGlobalSection
+EndGlobal
