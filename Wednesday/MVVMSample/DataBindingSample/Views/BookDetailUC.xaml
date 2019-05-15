@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="DataBindingSample.Views.BookDetailUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DataBindingSample.Views"
+             xmlns:conv="clr-namespace:DataBindingSample.Converters"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <conv:StringArrayToStringConverter x:Key="StringArrayToStringConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <Label Content="{Binding Path=ViewModel.SelectedBook, Mode=OneWay}" />
+            <TextBox Text="{Binding ViewModel.SelectedBook.Title, Mode=TwoWay, FallbackValue='default title'}" />
+            <TextBox Text="{Binding ViewModel.SelectedBook.Publisher, Mode=TwoWay}" />
+            <TextBlock Text="{Binding ViewModel.SelectedBook.Authors, Mode=OneTime, Converter={StaticResource StringArrayToStringConverter}, ConverterParameter='; '}" />
+            <Button Content="Show Book" Command="{Binding ViewModel.ShowBookCommand, Mode=OneTime}"  />
+            <Button Content="Change Book"  />
+            <Button Content="Add Book"  />
+        </StackPanel>
+    </Grid>
+</UserControl>
