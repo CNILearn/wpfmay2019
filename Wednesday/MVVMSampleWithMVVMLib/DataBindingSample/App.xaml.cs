@@ -20,18 +20,18 @@ namespace DataBindingSample
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            Container = RegisterServices();
+            // Container = RegisterServices();
         }
 
-        private IServiceProvider RegisterServices()
-        {
-            var services = new ServiceCollection();
-            services.AddTransient<IBooksService, BooksService>();
-            services.AddTransient<MainWindowViewModel>();
-            services.AddTransient<IDialogService, WPFDialogService>();
-            return services.BuildServiceProvider();
-        }
+        //private IServiceProvider RegisterServices()
+        //{
+        //    var services = new ServiceCollection();
+        //    services.AddTransient<IBooksService, BooksService>();
+        //    services.AddTransient<MainWindowViewModel>();
+        //    services.AddTransient<IDialogService, WPFDialogService>();
+        //    return services.BuildServiceProvider();
+        //}
 
-        public IServiceProvider Container { get; private set; }
+        //public IServiceProvider Container { get; private set; }
     }
 }

@@ -65,6 +65,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AppServices.cs" />
     <Compile Include="LocalServices\WPFDialogService.cs" />
     <Compile Include="Utilities\BookTemplateSelector.cs" />
     <Compile Include="Views\BookDetailUC.xaml.cs">

@@ -16,6 +16,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Extensions.DependencyInjection;
+using BooksLibrary.Services;
+using DataBindingSample.LocalServices;
 
 namespace DataBindingSample
 {
@@ -26,7 +28,11 @@ namespace DataBindingSample
     {
         public MainWindow()
         {
-            ViewModel = (Application.Current as App).Container.GetService<MainWindowViewModel>();
+            // ViewModel = (Application.Current as App).Container.GetService<MainWindowViewModel>();
+            //var booksService = new BooksService();
+            //var dialogService = new WPFDialogService();
+            //ViewModel = new MainWindowViewModel(booksService, dialogService);
+            ViewModel = AppServices.Instance.Container.GetService<MainWindowViewModel>();
             InitializeComponent();
             this.DataContext = this;
         }
