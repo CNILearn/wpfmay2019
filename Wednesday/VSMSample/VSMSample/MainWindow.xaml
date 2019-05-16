@@ -66,6 +66,19 @@
     <Grid x:Name="grid1">
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="MyStates">
+                <VisualStateGroup.Transitions>
+                    <VisualTransition GeneratedDuration="0">
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button1">
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.995"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="button1">
+                                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF2C23E4"/>
+                                <EasingColorKeyFrame KeyTime="0:0:0.9" Value="#FFE423E4"/>
+                            </ColorAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualTransition>
+                </VisualStateGroup.Transitions>
                 <VisualState x:Name="One">
                     <Storyboard>
                         <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsEnabled)" Storyboard.TargetName="text1">
