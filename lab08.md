@@ -1,5 +1,7 @@
-# Lab 8 - Collection View
+# Lab 8 - Animations
 
-Change an application to use a CollectionView, add filtering and sorting
-
-Change an application to use the DataGrid control instead of a ListBox
+* Create a Ellipse and animate it when the ellipse is loaded
+* Add easing animations
+* Create a key-frame animation
+* Create a template for a Button control, and style it using visual states
+* Create custom visual states, e.g. Normal and InProgress and change the state using the VisualStateManager
